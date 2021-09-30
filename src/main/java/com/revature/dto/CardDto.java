@@ -9,14 +9,9 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbParti
 @DynamoDbBean
 public class CardDto {
 
-    private String setId;
     private String question;
     private String answer;
 
-    @DynamoDbPartitionKey
-    public String getSetId() {
-        return setId;
-    }
 
     @DynamoDbAttribute("question")
     public String getQuestion() {
