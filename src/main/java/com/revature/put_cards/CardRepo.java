@@ -9,11 +9,10 @@ public class CardRepo {
 
     public CardRepo() { dbReader = new DynamoDBMapper(AmazonDynamoDBClientBuilder.defaultClient()); }
 
-    public void deleteCardById(String id){
+    public void updateCardById(String id){
 
-        Card deleteCard = new Card();
-        deleteCard.setId(id);
-        dbReader.delete(deleteCard);
+        Card updateCard = new Card();
+        dbReader.save(updateCard);
 
     }
 

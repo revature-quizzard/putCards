@@ -23,10 +23,11 @@ public class PutCardsHandler implements RequestHandler<APIGatewayProxyRequestEve
 
         String id = requestEvent.getQueryStringParameters().get("id");
 
-        cardRepo.deleteCardById(id);
+
+
 
         APIGatewayProxyResponseEvent responseEvent = new APIGatewayProxyResponseEvent();
-        System.out.println("Deleting a card");
+        System.out.println("Updating a card");
 
         return responseEvent;
     }
