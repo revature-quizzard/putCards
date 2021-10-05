@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 512
+      Handler: com.revature.put_cards.PutCardsHandler
+      CodeUri: C:\Users\kimtr\IdeaProjects\putCards
+      Runtime: java8.al2

@@ -14,12 +14,12 @@ public class Tag {
 
 
     @DynamoDbPartitionKey
-    public String getTagName() {
+    public String getName() {
         return tagName;
     }
 
-    @DynamoDbAttribute("tagColor")
-    public String getTagColor() {
+    @DynamoDbAttribute("color")
+    public String getColor() {
         return tagColor;
     }
 
