@@ -11,6 +11,13 @@ import com.google.gson.GsonBuilder;
 import com.revature.dto.CardDto;
 
 
+
+/**
+ * The PutCardsHandler class is an AWS Lambda function to handle update operations on Card objects.
+ * This function occupies the PUT Request Method on the Card endpoint.
+ */
+
+
 public class PutCardsHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     private static final Gson mapper = new GsonBuilder().setPrettyPrinting().create();

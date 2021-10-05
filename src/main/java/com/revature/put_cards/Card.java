@@ -7,6 +7,11 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
 
 
+
+/**
+ * The Card class is a POJO representing the Card model.
+ */
+
 @Data
 @DynamoDbBean
 public class Card {

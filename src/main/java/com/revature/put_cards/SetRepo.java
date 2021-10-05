@@ -7,6 +7,12 @@ import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
 import software.amazon.awssdk.http.apache.ApacheHttpClient;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
+
+/**
+ * The SetRepo class is a database repository which provides CRUD operations on the Sets table.
+ */
+
+
 public class SetRepo {
 
     private final DynamoDbTable<Set> setTable;

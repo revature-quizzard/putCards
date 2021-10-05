@@ -4,6 +4,9 @@ import lombok.Data;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 
+/**
+ * The CardDto class is a DTO which contains the fields within the Card model which can be updated.
+ */
 
 @Data
 @DynamoDbBean

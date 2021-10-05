@@ -8,6 +8,11 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbParti
 
 import java.util.List;
 
+
+/**
+ * The Set class is a POJO representing the Set model.
+ */
+
 @Data
 @DynamoDbBean
 public class Set {
