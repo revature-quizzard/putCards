@@ -1,35 +1,20 @@
-package com.revature.put_cards;
-
+package com.revature.dto;
 
 import lombok.Data;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbAttribute;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
-import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
-
-
 
 /**
- * The Card class is a POJO representing the Card model.
+ * The CardDto class is a DTO which contains the fields within the Card model which can be updated.
  */
 
 @Data
 @DynamoDbBean
-public class Card {
+public class CardDto {
 
-    private String id;
-    private String setId;
     private String question;
     private String answer;
 
-    @DynamoDbPartitionKey
-    public String getId() {
-        return id;
-    }
-
-    @DynamoDbAttribute("setId")
-    public String getSetId() {
-        return setId;
-    }
 
     @DynamoDbAttribute("question")
     public String getQuestion() {
